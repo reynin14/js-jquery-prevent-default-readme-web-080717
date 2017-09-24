@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+
   // browser refreshes on submit
   $('form').on('submit', function(){
     var name = $('#name').val();
@@ -15,10 +15,10 @@ $(document).ready(function(){
   // });
 
   // stop page refresh
-  // $('form').on('submit', function(event){
-  //   var name = $('#name').val();
-  //   $("#hello").text("Hello, " + name);
-  //   event.preventDefault();
-  // });
+  $('form').on('submit', function(event){
+    var name = $('#name').val();
+    $("#hello").text("Hello, " + name);
+    event.preventDefault();
+  });
 
 });
